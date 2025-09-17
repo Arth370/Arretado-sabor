@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+#Cart{
+    margin-top: 1vw;
+    border: 1px solid;
+    width: 35vw;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content:baseline;
+    font-size: 2vw;
+}
+#carrinho{
+    width: 3vw;
+}
+#total{
+    font-size: 1.1vw;
+    width: 40vw;
+    height: 30vh;
+    align-items: center;
+    background-color: #C9C7C7;
+    display: flex;
+    gap: 15vw;
+    color: #21B90D;
+}
