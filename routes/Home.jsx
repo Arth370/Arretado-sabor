@@ -8,79 +8,104 @@ let sarapatel = {
   nome:'Sarapatel',
   valor: 35.50,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Sarapatel.svg',
+  quant:0
 }
 let cuscuz = {
   nome:'Cuscuz Recheado',
   valor: 35.50,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Cuscuz_Recheado.svg',
+  quant:0
 }
 let acaraje = {
   nome:'Acarajé',
   valor: 20.00,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Acaraje.svg',
+  quant:0
 }
 let bolorolo = {
   nome:'Bolo de Rolo',
   valor: 27.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Bolo_Rolo.svg',
+  quant:0
 }
 let bolomilho = {
   nome:'Bolo de Milho',
   valor: 32.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Bolo_Milho.svg',
+  quant:0
 }
 let cocada = {
   nome:'Cocada',
   valor: 20.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Cocada.svg',
+  quant:0
 }
 let munguza = {
   nome:'Munguzá',
   valor: 25.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Muguzá.svg',
+  quant:0
 }
 let sururu = {
   nome:'Sururu',
   valor: 48.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Sururu.svg',
+  quant:0
 }
 let baiao = {
   nome:'Baião de Dois',
   valor: 54.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Baião_Dois.svg',
+  quant:0
 }
 let vatapa = {
   nome:'Vatapá',
   valor: 37.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/vatapá.svg',
+  quant:0
 }
 let pastel = {
   nome:'Pastel de Carne com Açúcar',
   valor: 23.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Pastel.svg',
+  quant:0
 }
 let carnepacoca = {
   nome:'Paçoca de Carne',
   valor: 20.99,
   carrinho:false,
-  click:false
+  click:false,
+  img:'../imagens/Pacoca.svg',
+  quant:0
 }
+
 function comprar(){
 if(criar==false){
   window.scroll({ top: 0, behavior: 'smooth' })//Ir para o Começo da Tela
 
-    const Fundo = document.getElementById('corpo')//Criar Tela
+  const Fundo = document.getElementById('corpo')//Criar Tela
   const DivCompra = document.createElement('div')
   const h1 = document.createElement('h1')
   const p = document.createElement('p')
@@ -130,7 +155,9 @@ if(criar==false){
   p.textContent=`Valor: ${sarapatel.valor}`
   button.addEventListener('click',()=>{
     sarapatel.carrinho=true
-    alert(sarapatel.carrinho)
+    sarapatel.quant++
+    let sarapatelString = JSON.stringify(sarapatel)
+    localStorage.setItem('sarapatel',sarapatelString)
   })
  }
  if( cuscuz.click==true){
@@ -139,7 +166,9 @@ if(criar==false){
   p.textContent=`Valor: ${cuscuz.valor}`
   button.addEventListener('click',()=>{
     cuscuz.carrinho=true
-    alert(cuscuz.carrinho)
+    cuscuz.quant++
+    let cuscuzString = JSON.stringify(cuscuz)
+    localStorage.setItem('cuscuz',cuscuzString)
   })
  }
  if(acaraje.click==true){
@@ -148,7 +177,9 @@ if(criar==false){
   p.textContent=`Valor: ${acaraje.valor}`
   button.addEventListener('click',()=>{
     acaraje.carrinho=true
-    alert(acaraje.carrinho)
+    acaraje.quant++
+    let acarajeString = JSON.stringify(acaraje)
+    localStorage.setItem('acaraje',acarajeString)
   })
  }
  if(bolorolo.click==true){
@@ -157,7 +188,9 @@ if(criar==false){
   p.textContent=`Valor: ${bolorolo.valor}`
   button.addEventListener('click',()=>{
     bolorolo.carrinho=true
-    alert(bolorolo.carrinho)
+    bolorolo.quant++
+    let boloroloString = JSON.stringify(bolorolo)
+    localStorage.setItem('bolorolo',boloroloString)
   })
  }
  if(bolomilho.click==true){
@@ -166,7 +199,9 @@ if(criar==false){
   p.textContent=`Valor: ${bolomilho.valor}`
   button.addEventListener('click',()=>{
     bolomilho.carrinho=true
-    alert(bolomilho.carrinho)
+    bolomilho.quant++
+    let bolomilhoString = JSON.stringify(bolomilho)
+    localStorage.setItem('bolomilho',bolomilhoString)
   })
  }
  if(cocada.click==true){
@@ -175,7 +210,9 @@ if(criar==false){
   p.textContent=`Valor: ${cocada.valor}`
   button.addEventListener('click',()=>{
     cocada.carrinho=true
-    alert(cocada.carrinho)
+    cocada.quant++
+    let cocadaString = JSON.stringify(cocada)
+    localStorage.setItem('cocada',cocadaString)
   })
  }
  if(munguza.click==true){
@@ -184,7 +221,9 @@ if(criar==false){
   p.textContent=`Valor: ${munguza.valor}`
   button.addEventListener('click',()=>{
     munguza.carrinho=true
-    alert(munguza.carrinho)
+    munguza.quant++
+    let munguzaString = JSON.stringify(munguza)
+    localStorage.setItem('munguza',munguzaString)
   })
  }
  if(sururu.click==true){
@@ -193,7 +232,10 @@ if(criar==false){
   p.textContent=`Valor: ${sururu.valor}`
   button.addEventListener('click',()=>{
     sururu.carrinho=true
-    alert(sururu.carrinho)
+    sururu.quant++
+    let sururuString = JSON.stringify(sururu)
+    localStorage.setItem('sururu',sururuString)
+    (sururu.carrinho)
   })
  }
  if(baiao.click==true){
@@ -202,7 +244,10 @@ if(criar==false){
   p.textContent=`Valor: ${baiao.valor}`
   button.addEventListener('click',()=>{
     baiao.carrinho=true
-    alert(baiao.carrinho)
+    baiao.quant++
+    let baiaoString = JSON.stringify(baiao)
+    localStorage.setItem('baiao',baiaoString)
+
   })
  }
  if(vatapa.click==true){
@@ -211,7 +256,10 @@ if(criar==false){
   p.textContent=`Valor: ${vatapa.valor}`
   button.addEventListener('click',()=>{
     vatapa.carrinho=true
-    alert(vatapa.carrinho)
+    vatapa.quant++
+    let vatapaString = JSON.stringify(vatapa)
+    localStorage.setItem('vatapa',vatapaString)
+
   })
  }
  if(pastel.click==true){
@@ -220,7 +268,10 @@ if(criar==false){
   p.textContent=`Valor: ${pastel.valor}`
   button.addEventListener('click',()=>{
     pastel.carrinho=true
-    alert(pastel.carrinho)
+    pastel.quant++
+    let pastelString = JSON.stringify(pastel)
+    localStorage.setItem('pastel',pastelString)
+
   })
  }
  if(carnepacoca.click==true){
@@ -229,7 +280,9 @@ if(criar==false){
   p.textContent=`Valor: ${carnepacoca.valor}`
   button.addEventListener('click',()=>{
     carnepacoca.carrinho=true
-    alert(carnepacoca.carrinho)
+    carnepacoca.quant++
+    let carneString = JSON.stringify(carnepacoca)
+    localStorage.setItem('carnepacoca',carneString)
   })
  }
 }

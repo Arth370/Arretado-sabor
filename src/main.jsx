@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './App.css'
 import Home from '../routes/Home'
 import Carrinho from '../routes/Carrinho'
+import Pagamento from '../routes/Pagamento'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router-dom'
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     element: <Carrinho/>,
     path:"carrinho"
+  },
+  {
+    element: <Pagamento/>,
+    path:"pagamento"
   }
 ])
 

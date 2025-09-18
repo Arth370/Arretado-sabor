@@ -1,0 +1,90 @@
+*{
+background-color: #D9D9D9;
+}
+#pagamento{
+    border: 1px solid;
+    width: 25vw;
+    height: 30vw;
+    background-color: #EAE9E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    padding: 3vw;
+}
+#text{
+    background-color: #EAE9E9;
+    display: flex;
+    font-size: 1.5vw;
+}
+#superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vw;
+    background-color: #EAE9E9;
+}
+#separacao{
+    width: 15vw;
+    border: 1px solid #D9D9D9;
+}
+#formas{
+    background-color: #EAE9E9;
+    display: flex;
+    gap: 1vw;
+}
+#formas-pix{
+    background-color: #EAE9E9;
+    display: flex;
+    align-items: center;
+}
+.imgs{
+    background-color: #EAE9E9;
+    width: 5vw;
+}
+.img-pix{
+    background-color: #EAE9E9;
+    width: 2vw;
+}
+.cartao{
+    display: flex;
+    align-items: center;
+    border: none;
+}
+#cartoes{
+    display: flex;
+    background-color: #EAE9E9;
+    gap: 4vw;
+
+}
+#Confirmar-pagamento{
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 0.7vw;
+    padding: 1vw;
+}
+.quadrado{
+    background-color: #EAE9E9;
+    width: 25vw;
+    display: flex;
+}
+.quadrado-text{
+    background-color: #EAE9E9;
+    width: 25vw;
+}
+.texto-quadrado{
+    background-color: #EAE9E9;
+}
+#corpao{
+    display: flex;
+    justify-content: space-around;
+}
+#comidas{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.imagem{
+    width: 10vw;
+    background-color: #EAE9E9;
+}

@@ -1,29 +1,164 @@
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1vw;
+.CarImg{
+  width: 10vw;
 }
-#Cart{
-    margin-top: 1vw;
-    border: 1px solid;
-    width: 35vw;
-    display: flex;
-    gap: 1em;
-    align-items: center;
-    justify-content:baseline;
-    font-size: 2vw;
+#secao1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+
 }
+
+#cabecalho_carrinho{
+  display: flex;
+  align-items: center;
+  margin-left: 9em;
+  margin-top: 6.875em;
+  margin-bottom: 5em;
+}
+
 #carrinho{
-    width: 3vw;
+  font-size: 4em;
+  margin-left: 1em;
 }
-#total{
-    font-size: 1.1vw;
-    width: 40vw;
-    height: 30vh;
-    align-items: center;
-    background-color: #C9C7C7;
-    display: flex;
-    gap: 15vw;
-    color: #21B90D;
+
+.conjunto_comidas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  margin-left: 9em;
+  border: 1px solid;
+}
+.funcoes{
+  display: flex;
+  align-items: center;
+}
+
+.separar_comida{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo_carrinho{
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.preco_carrinho{
+  font-size: 2em;
+}
+
+.informacoes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30em;
+}
+
+#informacao1{
+  margin-left: 21em;
+}
+
+#informacao2{
+  margin-left: 20em;
+}
+
+#informacao3{
+  margin-left: 20.7em;
+}
+
+#informacao4{
+  margin-left: 20.8em;
+}
+
+#preco_1{
+  margin-left: 8.05em;
+}
+
+#preco_2{
+  margin-left: 5.1em;
+}
+
+#preco_3{
+  margin-left: 5.1em;
+}
+
+#preco_4{
+  margin-left: 7.4em;
+}
+
+#itens{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+#secao2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo_secao_2{
+  margin-right: 84.9em;
+  margin-top: 11.375em;
+  margin-bottom: 3.5625em;
+}
+
+#outras_comidas{
+  display: flex;
+  justify-content: space-between;
+  width: 100em;
+}
+
+.preco_secao_2{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#secao_3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#preco_secao_3{
+  display: flex;
+  justify-content: space-between;
+  width: 100em;
+  margin-top: 8em;
+}
+
+.tamanho_text_secao_3{
+  font-size: 4em;
+}
+
+#botao_compra{
+  height: 3em;
+  width: 7em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #21B90D;
+  color: #ffffff;
+  font-size: 5em;
+  margin-top: 2em;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+}
+.teste{
+    border: 1px solid;
+    width: 10vw;
+    height: 10vh;
+}
+.img_comida{
+    width: 13.5vw;
 }
